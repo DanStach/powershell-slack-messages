@@ -1,4 +1,4 @@
-﻿# Example of a summary link in a slack message sent via powershell
+﻿# Example of a code branch link in a slack message sent via powershell
 
 $Input_Testenvironment = "PRD"
 $Input_TestURL = "https://www.google.com"
@@ -8,10 +8,11 @@ $testsPassed = 99
 $testsFailed = 1
 $testsBuildId = 55555
 $testsName = "TFS_Build_Name_Example"
-
-$Text = "*Experiment please disregard - SummaryLink*
+$buildBranch = "origin/of-life"
+$Text = "*Experiment please disregard - BranchLink*
 *<http://lmgtfy.com/?q=$testsBuildId |$testsName>*
 $Input_TestURL $Input_Category
+<http://lmgtfy.com/?q=$buildBranch |$buildBranch>
 TOTAL:$testsTotal, PASS=$testsPassed, FAIL=$testsFailed"
 $SlackWebHookUri = "https://hooks.slack.com/services/<your webhook info>" 
 
