@@ -1,4 +1,5 @@
-﻿# Example of attachment with logo slack message  sent via powershell
+﻿# Example of attachment with fields slack message  sent via powershell
+
 $Input_Testenvironment = "PRD"
 $Input_TestURL = "google.com"
 $Input_Category = "Smoke"
